@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import { DEBUG } from './Debug';
 
 export class SoundManager {
   private scene: Phaser.Scene;
@@ -54,7 +55,11 @@ export class SoundManager {
     if (!this.enabled) return;
     const key = SoundManager.SFX_MAP[action];
     if (key) {
-      this.scene.sound.play(key, { volume: 0.5 });
+      try {
+        this.scene.sound.play(key, { volume: 0.5 });
+      } catch (e) {
+        if (DEBUG) console.error('SFX play error:', key, e);
+      }
     }
   }
 

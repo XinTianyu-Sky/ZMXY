@@ -5,6 +5,7 @@ import { InputManager } from './InputManager';
 import { GameConfig } from './GameConfig';
 import { HUDScene } from '../ui/HUDScene';
 import { SoundManager } from './SoundManager';
+import { DEBUG } from './Debug';
 import monstersData from '../config/monsters.json';
 import levelsData from '../config/levels.json';
 
@@ -209,6 +210,16 @@ export class GameScene extends Phaser.Scene {
   update(time: number, delta: number): void {
     if (!this.hero || !this.hero.container.active) return;
 
+    try {
+      this.doUpdate(time, delta);
+    } catch (e) {
+      if (DEBUG) {
+        console.error('[GameScene] update error:', e);
+      }
+    }
+  }
+
+  private doUpdate(time: number, delta: number): void {
     this.inputMgr.update(time);
     this.hero.step(time, delta);
     this.hero.groundDetect(this.groundColliders);

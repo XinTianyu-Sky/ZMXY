@@ -157,7 +157,6 @@ export class Hero extends BaseEntity {
     if (this.attackTimer > 0) {
       this.attackTimer--;
       if (this.attackTimer === 0) {
-        console.log('ATTACK DONE - returning to WAIT');
         this.curAction = EntityAction.WAIT;
         this.prevAction = this.curAction;
       }
@@ -244,11 +243,6 @@ export class Hero extends BaseEntity {
     this.updateSprite();
   }
 
-  private returnToIdle(): void {
-    if (this.isDead()) return;
-    this.setAction(EntityAction.WAIT);
-  }
-
   override jump(): void {
     super.jump();
     this.updateSprite();
@@ -261,10 +255,9 @@ export class Hero extends BaseEntity {
   private doAttack(): void {
     this.comboTimer = this.comboWindow;
     this.comboStep = (this.comboStep % 5) + 1;
-    this.attackTimer = 9;
+    this.attackTimer = 30;
     this.setAction(`hit${this.comboStep}` as EntityAction);
     this.soundMgr.playSFX(`hit${this.comboStep}`);
-    console.log('attack:', this.comboStep, 'attackTimer:', this.attackTimer, 'action:', this.curAction);
 
     const info = this.attackBackInfoDict.get(`hit${this.comboStep}`);
     if (info) {
