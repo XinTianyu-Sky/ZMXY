@@ -1,0 +1,247 @@
+{
+  "sl01": {
+    "stage": 0,
+    "level": 1,
+    "name": "新手引导",
+    "worldWidth": 2800,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 2800 }
+    ],
+    "waves": []
+  },
+  "sl02": {
+    "stage": 0,
+    "level": 2,
+    "name": "新手引导",
+    "worldWidth": 940,
+    "stopPoints": [],
+    "waves": []
+  },
+  "sl11": {
+    "stage": 1,
+    "level": 1,
+    "name": "天宫道",
+    "worldWidth": 940,
+    "stopPoints": [],
+    "waves": []
+  },
+  "sl12": {
+    "stage": 1,
+    "level": 2,
+    "name": "天宫道",
+    "worldWidth": 5750,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 1, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 2, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 3, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 4, "isBoss": true, "betweenRandL": 1150 }
+    ],
+    "waves": [
+      { "enemyType": 4, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 4, "isRandom": false },
+      { "enemyType": 8, "delay": 2, "interval": 1, "totalNum": 4, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 7, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 8, "delay": 2, "interval": 1, "totalNum": 5, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 7, "delay": 2, "interval": 1, "totalNum": 6, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 7, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 8, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 7, "delay": 2, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 8, "delay": 2, "interval": 1, "totalNum": 4, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 7, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 7, "delay": 2, "interval": 1, "totalNum": 6, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 8, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 2, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 4, "isRandom": false }
+    ]
+  },
+  "sl13": {
+    "stage": 1,
+    "level": 3,
+    "name": "天宫道",
+    "worldWidth": 5490,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 1, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 2, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 3, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 4, "isBoss": true, "betweenRandL": 940 }
+    ],
+    "waves": [
+      { "enemyType": 8, "delay": 2, "interval": 2, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 7, "delay": 2, "interval": 2, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 3, "delay": 2, "interval": 2, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 3, "delay": 2, "interval": 1, "totalNum": 5, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 7, "delay": 2, "interval": 1, "totalNum": 5, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 7, "delay": 6, "interval": 1, "totalNum": 4, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 7, "delay": 6, "interval": 1, "totalNum": 4, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 3, "delay": 2, "interval": 1, "totalNum": 4, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 7, "delay": 6, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 3, "delay": 6, "interval": 1, "totalNum": 5, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 3, "delay": 2, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 5, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 4, "isRandom": false },
+      { "enemyType": 30, "delay": 5, "interval": 4, "totalNum": 30, "stopPointIdx": 4, "isRandom": false },
+      { "enemyType": 30, "delay": 5, "interval": 4, "totalNum": 30, "stopPointIdx": 4, "isRandom": false }
+    ]
+  },
+  "sl21": {
+    "stage": 2,
+    "level": 1,
+    "name": "凌霄殿",
+    "worldWidth": 5750,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 1, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 2, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 3, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 4, "isBoss": false, "betweenRandL": 1150 }
+    ],
+    "waves": [
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 1, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 1, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 1, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 1, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 6, "delay": 3, "interval": 1, "totalNum": 1, "stopPointIdx": 4, "isRandom": false }
+    ]
+  },
+  "sl22": {
+    "stage": 2,
+    "level": 2,
+    "name": "凌霄殿",
+    "worldWidth": 5750,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 1, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 2, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 3, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 4, "isBoss": true, "betweenRandL": 1150 }
+    ],
+    "waves": [
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 16, "delay": 3, "interval": 1, "totalNum": 1, "stopPointIdx": 4, "isRandom": false }
+    ]
+  },
+  "sl23": {
+    "stage": 2,
+    "level": 3,
+    "name": "凌霄殿",
+    "worldWidth": 5750,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 1, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 2, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 3, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 4, "isBoss": true, "betweenRandL": 1150 }
+    ],
+    "waves": [
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 9, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 10, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 10, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 6, "interval": 1, "totalNum": 3, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 19, "delay": 2, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 9, "delay": 8, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 19, "delay": 8, "interval": 1, "totalNum": 4, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 15, "delay": 2, "interval": 1, "totalNum": 1, "stopPointIdx": 4, "isRandom": false }
+    ]
+  },
+  "sl31": {
+    "stage": 3,
+    "level": 1,
+    "name": "南天门",
+    "worldWidth": 5750,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 1, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 2, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 3, "isBoss": false, "betweenRandL": 1150 },
+      { "idx": 4, "isBoss": true, "betweenRandL": 1150 }
+    ],
+    "waves": [
+      { "enemyType": 12, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 11, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 11, "delay": 6, "interval": 1, "totalNum": 5, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 12, "delay": 2, "interval": 1, "totalNum": 5, "stopPointIdx": 0, "isRandom": false },
+      { "enemyType": 11, "delay": 2, "interval": 1, "totalNum": 5, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 11, "delay": 6, "interval": 1, "totalNum": 5, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 12, "delay": 6, "interval": 1, "totalNum": 5, "stopPointIdx": 1, "isRandom": false },
+      { "enemyType": 11, "delay": 2, "interval": 1, "totalNum": 6, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 12, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 12, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 1, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 1, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 2, "isRandom": false },
+      { "enemyType": 11, "delay": 2, "interval": 1, "totalNum": 5, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 12, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 12, "delay": 2, "interval": 1, "totalNum": 3, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 1, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 1, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 1, "delay": 6, "interval": 1, "totalNum": 2, "stopPointIdx": 3, "isRandom": false },
+      { "enemyType": 21, "delay": 3, "interval": 1, "totalNum": 1, "stopPointIdx": 4, "isRandom": false }
+    ]
+  },
+  "sl101": {
+    "stage": 10,
+    "level": 1,
+    "name": "东海",
+    "worldWidth": 2500,
+    "stopPoints": [
+      { "idx": 0, "isBoss": false, "betweenRandL": 2500 }
+    ],
+    "waves": []
+  }
+}

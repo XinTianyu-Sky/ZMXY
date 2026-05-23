@@ -1,0 +1,19 @@
+{
+  "name": "zmxy",
+  "version": "0.1.0",
+  "description": "造梦西游3再续天庭 - HTML5 Remake",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "wukong": {
+    "id": 1,
+    "name": "悟空",
+    "baseHp": 80,
+    "hpPerLevel": 50,
+    "baseMp": 50,
+    "mpPerLevel": 20,
+    "baseAttack": 10,
+    "attackPerLevel": 5,
+    "baseDefense": 2,
+    "defensePerLevel": 2,
+    "horizenSpeed": 6,
+    "skills": {
+      "slz": {
+        "id": "slz",
+        "name": "扫雷杖",
+        "description": "地面扫击杖法",
+        "action": "hit6",
+        "mpCost": [10, 20, 32, 53, 75, 109, 139, 179, 228],
+        "damageKind": "physics",
+        "damageFormula": "28.334 * e^(0.308 * level) + 0.618 * e^(0.148 * level) * hurt * critMult * gxpMult",
+        "addProtection": 5
+      },
+      "zz": {
+        "id": "zz",
+        "name": "重斩",
+        "description": "重击劈斩",
+        "action": "hit14",
+        "mpCost": [15, 23, 36, 61, 86, 113, 161, 207, 264],
+        "damageKind": "physics",
+        "damageFormula": "70.835 * e^(0.308 * level) + 1.545 * e^(0.149 * level) * hurt * critMult * gxpMult",
+        "addProtection": 5
+      },
+      "qsez": {
+        "id": "qsez",
+        "name": "七十二斩",
+        "description": "多重斩击，生成分身",
+        "action": "hit13",
+        "mpCost": [26, 60, 105, 150, 195, 240, 285, 330, 375],
+        "damageKind": "physics",
+        "damageFormula": "0.629 * e^(0.308 * level) + 0.0137 * e^(0.141 * level) * hurt * critMult * gxpMult"
+      },
+      "hmz": {
+        "id": "hmz",
+        "name": "火魔斩",
+        "description": "火焰连斩，多段攻击",
+        "action": "hit10",
+        "mpCost": [30, 72, 116, 164, 245, 340, 453, 590, 757, 963],
+        "damageKind": "mixed",
+        "timers": 30
+      },
+      "lys": {
+        "id": "lys",
+        "name": "烈焰闪",
+        "description": "火焰冲刺",
+        "action": "hit9",
+        "mpCost": [9, 18, 40, 78, 106, 140, 195, 265, 310, 360],
+        "damageKind": "physics",
+        "addProtection": 3
+      },
+      "hytj": {
+        "id": "hytj",
+        "name": "火眼金睛",
+        "description": "火眼冲击",
+        "action": "hit7",
+        "mpCost": [10, 20, 32, 53, 75, 109, 139, 179, 228],
+        "damageKind": "magic",
+        "addProtection": 2
+      },
+      "lyfb": {
+        "id": "lyfb",
+        "name": "烈焰风暴",
+        "description": "烈焰范围攻击，生成分身",
+        "action": "hit8",
+        "mpCost": [18, 44, 72, 119, 168, 234, 313, 441, 600],
+        "damageKind": "magic",
+        "addProtection": 2.5
+      },
+      "jdy": {
+        "id": "jdy",
+        "name": "筋斗云",
+        "description": "筋斗云二段攻击",
+        "action": "hit11",
+        "mpCost": [18, 40, 70, 100, 130, 160, 190, 220, 250],
+        "damageKind": "magic",
+        "timers": 35
+      },
+      "hyjj": {
+        "id": "hyjj",
+        "name": "火眼金睛(地)",
+        "description": "地面火眼金睛，爆炸攻击",
+        "action": "hit12",
+        "mpCost": [27, 64, 120, 206, 286, 360, 449, 536, 735],
+        "damageKind": "magic",
+        "timers": 17
+      },
+      "sx": {
+        "id": "sx",
+        "name": "嗜血",
+        "description": "被动：+5% 吸血 +5% 暴击",
+        "action": "passive",
+        "mpCost": [0, 0, 0, 0, 0, 0, 0, 0, 0],
+        "damageKind": "passive"
+      }
+    },
+    "hitChain": {
+      "hit1": { "multiplier": 0.707, "hitMaxCount": 999, "attackKind": "physics", "addProtection": 2.5 },
+      "hit2": { "multiplier": 0.707, "hitMaxCount": 20, "attackKind": "physics", "addProtection": 2.5 },
+      "hit3": { "multiplier": 0.707, "hitMaxCount": 20, "attackKind": "physics", "addProtection": 2.5 },
+      "hit4": { "multiplier": 1.183, "hitMaxCount": 100, "attackKind": "physics", "addProtection": 2.5 },
+      "hit5": { "multiplier": 1.304, "hitMaxCount": 100, "attackKind": "physics", "addProtection": 2.5 }
+    }
+  },
+  "expCurve": {
+    "tier1": { "minLevel": 1, "maxLevel": 6, "formula": "135 + 10 * (level - 1)" },
+    "tier2": { "minLevel": 7, "maxLevel": 12, "formula": "625 + 50 * (level - 7)" },
+    "tier3": { "minLevel": 13, "maxLevel": 18, "formula": "1950 + 100 * (level - 13)" },
+    "tier4": { "minLevel": 19, "maxLevel": 50, "formula": "5000 + 5000 * (level - 19)" },
+    "table": [135, 145, 155, 165, 175, 185, 625, 675, 725, 775, 825, 875, 1950, 2050, 2150, 2250, 2350, 2450, 5000]
+  },
+  "passiveSkills": {
+    "0": { "name": "生命加成", "effect": "maxHP +100 per level" },
+    "1": { "name": "魔法加成", "effect": "maxMP +100 per level" },
+    "2": { "name": "暴击加成", "effect": "crit +1 per level" },
+    "3": { "name": "生命恢复", "effect": "HP regen +3 per level" },
+    "4": { "name": "魔法恢复", "effect": "MP regen +3 per level" }
+  }
+}

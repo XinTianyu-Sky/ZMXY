@@ -1,0 +1,57 @@
+{
+  "frameClips": 24,
+  "viewportWidth": 940,
+  "viewportHeight": 560,
+  "maxMonsterPerScreen": 8,
+  "gravity": 1.5,
+  "horizenSpeed": 5,
+  "horizenRunSpeed": 8,
+  "jumpPower": -30,
+  "gxpMode": {
+    "gravityMultiplier": 2.5,
+    "horizenSpeedMultiplier": 1.5,
+    "jumpPowerMultiplier": 1.5,
+    "damageMultiplier": 1.5,
+    "invulnerable": true
+  },
+  "damageFormula": {
+    "physical": "max(damage - defense, 1)",
+    "magic": "damage * (1 - magicDef / 100)",
+    "magicMax": "if magicDef >= 100: damage = 99999",
+    "critChance": "crit / 100",
+    "critMultiplier": 2,
+    "gxpMultiplier": 1.5,
+    "lifesteal": "int(eatblood / 100 * damageDealt)",
+    "hpRegenTick": "every frameClips frames, regen selfhp HP and selfmp MP"
+  },
+  "maxLevel": 50,
+  "invincibilityFrames": 10,
+  "stageNames": {
+    "1": "天宫道",
+    "2": "凌霄殿",
+    "3": "南天门",
+    "4": "九龙宝殿",
+    "5": "东海",
+    "6": "水杉海",
+    "7": "北俱芦洲",
+    "8": "西牛贺洲",
+    "9": "东胜神州",
+    "10": "西海龙宫"
+  },
+  "skillNames": {
+    "wukong": ["扫雷杖", "重斩", "嗜血", "七十二斩", "火魔斩", "烈焰闪", "火眼金睛", "烈焰风暴", "筋斗云", "火眼金睛"]
+  },
+  "petTypes": ["monkey", "horse", "ufo", "tigress", "turtle", "phoenix", "dragon"],
+  "magicWeapons": [
+    { "id": "xhhl", "name": "宣花葫芦", "description": "捕捉宠物" },
+    { "id": "kyl", "name": "枯叶灵", "description": "缓慢回血" },
+    { "id": "qyj", "name": "青云剑", "description": "御剑飞行" },
+    { "id": "hyzzs", "name": "混元珍珠伞", "description": "伤害护盾" },
+    { "id": "zjld", "name": "紫金铃铛", "description": "无敌+回血" },
+    { "id": "xhmt", "name": "血海魔童", "description": "多段攻击破甲" },
+    { "id": "syl", "name": "神叶灵", "description": "缓慢回血回蓝" },
+    { "id": "lxj", "name": "戮仙剑", "description": "多剑AOE" },
+    { "id": "hywjs", "name": "混元无极伞", "description": "强力护盾+反伤" },
+    { "id": "zsTimer", "name": "烛时金轮", "description": "时间回溯" }
+  ]
+}
