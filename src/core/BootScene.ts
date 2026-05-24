@@ -21,8 +21,6 @@ const AUDIO_FILES = [
   '80_Role4_hit7', '81_bg7', '82_m_bg13', '83_m_bg12', '84_pickup',
 ];
 
-const BGM_FILES = ['33_bg0', '25_bg1', '3_bg2', '31_bg3', '24_bg4', '30_bg5', '39_bg6', '81_bg7'];
-
 export class BootScene extends Phaser.Scene {
   constructor() {
     super({ key: 'BootScene' });
@@ -30,23 +28,42 @@ export class BootScene extends Phaser.Scene {
 
   preload(): void {
     const { width, height } = this.cameras.main;
+    const cx = width / 2;
+
+    const darkBg = this.add.graphics();
+    darkBg.setDepth(-2);
+    darkBg.fillStyle(0x0a0a1a);
+    darkBg.fillRect(0, 0, width, height);
+
+    this.load.image('loadingBg', 'sprites/loading_bg.png');
+    this.load.once('filecomplete-image-loadingBg', () => {
+      this.add.image(cx, height / 2, 'loadingBg').setOrigin(0.5).setDepth(-1);
+      darkBg.destroy();
+    });
+
+    const barY = height - 60;
     const progressBar = this.add.graphics();
     const progressBox = this.add.graphics();
-    progressBox.fillStyle(0x222222, 0.8);
-    progressBox.fillRect(width / 2 - 160, height / 2 - 15, 320, 30);
+    progressBox.fillStyle(0x000000, 0.7);
+    progressBox.fillRect(cx - 200, barY - 2, 400, 24);
+    progressBox.lineStyle(1, 0x666666);
+    progressBox.strokeRect(cx - 200, barY - 2, 400, 24);
 
-    const loadingText = this.add.text(width / 2, height / 2 - 35, '造梦西游3 再续天庭', {
-      fontSize: '20px', color: '#ffcc00', fontFamily: 'SimHei, Arial',
-    }).setOrigin(0.5);
-
-    const statusText = this.add.text(width / 2, height / 2 + 30, '加载资源...', {
-      fontSize: '12px', color: '#888888', fontFamily: 'Arial',
+    const statusText = this.add.text(cx, barY + 40, '加载资源...', {
+      fontSize: '12px', color: '#aaaaaa', fontFamily: 'Arial',
     }).setOrigin(0.5);
 
     this.load.on('progress', (value: number) => {
       progressBar.clear();
-      progressBar.fillStyle(0xffcc00, 1);
-      progressBar.fillRect(width / 2 - 155, height / 2 - 10, 310 * value, 20);
+      const barWidth = 390 * value;
+      if (barWidth > 0) {
+        progressBar.fillStyle(0xff8800, 1);
+        progressBar.fillRect(cx - 195, barY, barWidth, 4);
+        progressBar.fillStyle(0xffcc00, 1);
+        progressBar.fillRect(cx - 195, barY, barWidth, 16);
+        progressBar.fillStyle(0xffffff, 0.3);
+        progressBar.fillRect(cx - 195, barY, barWidth, 5);
+      }
     });
 
     this.load.on('fileprogress', (file: { key: string }) => {
@@ -67,7 +84,6 @@ export class BootScene extends Phaser.Scene {
     this.load.on('complete', () => {
       progressBar.destroy();
       progressBox.destroy();
-      loadingText.destroy();
       statusText.destroy();
     });
   }
